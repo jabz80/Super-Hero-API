@@ -1,0 +1,207 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+
+body,html {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: rgba(40, 60, 75, 0.815);
+    color: white;
+    height: 100%;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+@keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+
+.hero {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    max-width: 500px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin-top: 250px;
+    padding: 10px;
+
+  }
+  
+   button {
+    width: 250px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    background-color: #4d55ef;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.399);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+  .container {
+    position: relative;
+    background-color: black;
+    height: 100vh;  
+    width: 99.1vw;    
+    background-image: url('./assets/superhero.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+  }
+
+
+.navbar {
+    display: flex; 
+    justify-content: space-around;
+    background-color: black;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+  
+.navbar li {
+    padding-left: 1rem;
+}
+
+.navbar li a {
+    color: rgb(248, 242, 242);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.navbar li a:hover {
+    color: #4d55ef;
+}
+
+.SearchBar {
+    text-align: center;
+    padding: 50px;
+}
+
+.SearchBar input {
+    width: 400px;
+    height: 50px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.399);
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.3;
+  }
+
+  .SearchBar button {
+    width: 150px;
+    height: 50px;
+    background-color: #4d55ef;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.399);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.SearchBar button:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.SearchBar button:active {
+    transform: scale(0.95);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.heroes {
+  display: flex;
+}
+
+.heroes img {
+  height: 500px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.399);
+}
+
+.show-card {
+  display: inline-block;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+.loader {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border: 5px solid transparent;
+  border-top: 5px solid #3498db; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite, changeColor 2s infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    border-top: 5px solid #3498db;
+  }
+  25% {
+    border-top: 5px solid #e74c3c; 
+  }
+  50% {
+    border-top: 5px solid #2ecc71;
+  }
+  75% {
+    border-top: 5px solid #f1c40f; 
+  }
+  100% {
+    border-top: 5px solid #3498db; 
+  }
+}
